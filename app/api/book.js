@@ -18,7 +18,7 @@ router.post('/', function (req, res, next) {
         if (err) return next(err);
         console.log(information);
         return res.status(201).json({borrowList: information, detail: detail});
-      })
+      });
     });
   });
 });

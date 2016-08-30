@@ -16,8 +16,8 @@ router.post('/', function (req, res) {
         return res.send(res);
       }
       return res.sendStatus(409);
-    })
-  })
-})
+    });
+  });
+});
 
 export default router;
