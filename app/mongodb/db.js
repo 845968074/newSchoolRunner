@@ -1,7 +1,8 @@
 import mongoose from'mongoose';
 module.exports = {
   connect: function (mode, callback) {
-    let url = 'mongodb://localhost/newSchoolRunnerDB';
+   /* let url = 'mongodb://localhost/newSchoolRunnerDB';*/
+    let url = process.env.PROD_MONGODB || 'mongodb://localhost/newSchoolRunnerDB';
     if (mode === 'test') {
       url = 'mongodb://localhost/newSchoolRunner-demo';
     }
@@ -11,3 +12,5 @@ module.exports = {
     mongoose.connection.close(callback);
   }
 };
+
+

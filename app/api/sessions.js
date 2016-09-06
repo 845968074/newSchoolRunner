@@ -39,3 +39,4 @@ function generateInfo(userId, password) {
   return userId + ':' + sha1(password);
 }
 export default router;
+
