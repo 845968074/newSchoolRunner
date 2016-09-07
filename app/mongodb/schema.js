@@ -18,5 +18,5 @@ const messageModel = new Schema({
 });
 const User = mongoose.model('users', UserModel);
 
-const Message = mongoose.model('messages', messageModel);
+const Message = mongoose.model('message', messageModel);
 module.exports = {User,Message};
