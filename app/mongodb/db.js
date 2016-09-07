@@ -2,7 +2,7 @@ import mongoose from'mongoose';
 module.exports = {
   connect: function (mode, callback) {
     /* let url = 'mongodb://localhost/newSchoolRunnerDB';*/
-    let url = process.env.PROD_MONGODB || 'mongodb://newSchoolRunnerDB:123456789anfen@ds019916.mlab.com:19916/schoolrunner';
+    let url = process.env.PROD_MONGODB || 'mongodb://localhost/schoolrunner';
     if (mode === 'test') {
       url = 'mongodb://localhost/newSchoolRunner-demo';
     }
