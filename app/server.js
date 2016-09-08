@@ -35,7 +35,7 @@ if (require.main === module) {
       console.log('Listening on 3000');
     });
   });*/
-  app.listen(process.env.PORT || 3000, function () {
+  app.listen(process.env.PORT, function () {
     db.connect((err) => {
       if (err) return console.error('db connection failed');
       console.log('Listening on 3000');
