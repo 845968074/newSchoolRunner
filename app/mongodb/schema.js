@@ -9,7 +9,6 @@ const UserModel = new Schema({
   email: String,
   readerType: String
 });
-
 const messageModel = new Schema({
   userId: String,
   userName: String,
@@ -19,4 +18,4 @@ const messageModel = new Schema({
 const User = mongoose.model('users', UserModel);
 
 const Message = mongoose.model('message', messageModel);
-module.exports = {User,Message};
+module.exports = {User, Message};
